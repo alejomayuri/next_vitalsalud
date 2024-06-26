@@ -1,7 +1,14 @@
-import { Inter } from "next/font/google";
+import { inter } from "./ui/fonts";
 import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
+import style from "./layout.module.css";
+import Link from "next/link";
+import Image from "next/image";
+import FacebookFooter from "./ui/icons/facebook_f";
+import InstagramFooter from "./ui/icons/instagram_f";
+import WhatsAppFooter from "./ui/icons/whatsapp_f";
+import MailFooter from "./ui/icons/mail_f";
+import Pin from "./ui/icons/pin";
+import { kanit } from "./ui/fonts";
 
 export const metadata = {
   title: "Create Next App",
@@ -11,7 +18,47 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <header className={style.header}>
+          <Link href="/">
+            <Image width={488} height={140} src="/logo-b.png" alt="Logo" />
+          </Link>
+          <nav>
+            <ul>
+              <li>
+                <Link href="/servicios">Servicios</Link>
+              </li>
+              <li>
+                <Link href="/nosotros">Nosotros</Link>
+              </li>
+              <li>
+                <Link href="/contacto">Contáctanos</Link>
+              </li>
+            </ul>
+          </nav>
+        </header>
+        <main>{children}</main>
+        <footer className={style.footer}>
+          <div>
+            <div className={style.topFooter}>
+              <Link href="/">
+                <Image width={488} height={120} src="/logo-w.png" alt="Logo" />
+              </Link>
+              <div>
+                <p className={kanit.className}>REDES SOCIALES</p>
+                <Link href="https://www.facebook.com/profile.php?id=61558309880308&amp;mibextid=LQQJ4d"><FacebookFooter /></Link>
+                <Link href="https://www.instagram.com/vital_salud_center_?igsh=ZWdlbjljcmNvbDM1"><InstagramFooter /></Link>
+                <Link href="https://wa.me/938571905?text=Hola%20quiero%20más%20información"><WhatsAppFooter /></Link>
+                <Link href="mailto:vitalsalud.center24@gmail.com?subject=Consulta"><MailFooter /></Link>
+              </div>
+            </div>
+            <div className={style.bottomFooter}>
+              <Pin />
+              <p>Av. Petit Thouars 3547, San Isidro</p>
+            </div>
+          </div>
+        </footer>
+      </body>
     </html>
   );
 }

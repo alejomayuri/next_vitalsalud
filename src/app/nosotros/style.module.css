@@ -1,26 +1,28 @@
-.top__wrapper {
+.wrapper {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
 }
 
 .text {
-  max-width: 560px;
   width: 100%;
 }
-
+  
 .text > h2 {
   color: #fff;
-  font-size: 92px;
+  font-size: 85px;
   text-align: center;
-  border-bottom: solid 5px #fff;
+  width: 500px;
+  border-bottom: solid 3px #fff;
   text-shadow: #000 2px 2px 0;
-  padding-bottom: 16px; 
+  padding-bottom: 16px;
+  margin: 0 auto;
 }
-
+  
 .text > p {
   color: #fff;
-  font-size: 24px;
+  font-size: 22px;
   margin-top: 24px;
-  text-align: justify;
+  text-align: center;
 }
