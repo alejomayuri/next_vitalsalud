@@ -4,6 +4,10 @@
     align-items: center;
     justify-content: space-between;
 }
+
+.image {
+    display: block;
+}
   
 .text {
     width: 100%;
@@ -62,4 +66,29 @@
     color: #fff;
     font-size: 24px;
     text-align: center;
+}
+
+@media screen and (max-width: 796px) {
+    .image {
+        display: none;
+    }
+
+    .text > h2 {
+        font-size: 60px;
+        width: 100%;
+    }
+
+    .text div {
+        flex-direction: column;
+    }
+
+    .text ul {
+        padding: 0;
+        border-left: none;
+    }
+
+    .text li {
+        margin-top: 8px;
+        height: 32px;
+    }
 }

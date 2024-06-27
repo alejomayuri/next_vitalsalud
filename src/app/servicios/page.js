@@ -9,7 +9,7 @@ export default function Nosotros() {
   return (
     <div className={style.wrapper}>
         <div>
-          <Image width={450} height={423} alt="main image" src="/servicios.png" />
+          <Image className={style.image} width={450} height={423} alt="main image" src="/servicios.png" />
         </div>
         <div className={style.text}>
             <h2 className={katibeh.className}>Servicios</h2>

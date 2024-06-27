@@ -2,8 +2,8 @@ import * as React from "react"
 const InstagramFooter = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width={58}
-    height={57}
+    viewBox="0 0 58 58"
+    preserveAspectRatio="xMidYMid meet"
     fill="none"
     {...props}
   >

@@ -8,6 +8,19 @@
     border-bottom: solid 2px #80B23F;
 }
 
+.movDesktop {
+    display: none;
+}
+
+.header nav {
+    display: flex;
+    align-items: center;
+}
+
+.hamburguer {
+    display: none;
+}
+
 .header nav ul {
     display: flex;
     gap: 48px;
@@ -26,6 +39,18 @@
 .header li {
     text-transform: uppercase;
     list-style: none;
+}
+
+.logo_l {
+    display: block;
+}
+
+.logo_m {
+    display: none;
+}
+
+.logo_s {
+    display: none;
 }
 
 .footer {
@@ -68,4 +93,106 @@
     color: #fff;
     font-size: 32px;
     font-weight: 600;
+}
+
+@media screen and (max-width: 1200px) {
+    .header {
+        padding: 0 64px;
+        height: 110px;
+    }
+
+    .header nav ul {
+        gap: 24px;
+    }
+
+    .logo_l {
+        display: none;
+    }
+    
+    .logo_m {
+        display: block;
+    }
+
+    .logo_s {
+        display: none;
+    }
+
+    .topFooter {
+        padding: 0 64px;
+    }
+
+    .topFooter > div {
+        gap: 12px;
+    }
+
+    .topFooter > div p {
+        display: none;
+    }
+
+    .bottomFooter p {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 796px) {
+    .header {
+        padding: 0 16px;
+        height: 80px;
+        position: relative;
+    }
+
+    .navDesktop {
+        display: none;
+    }
+
+    .header nav {
+        position: absolute;
+        bottom: -142px;
+        background: #fff;
+        display: none;
+        flex-direction: column;
+        height: 140px;
+        padding: 16px;
+        width: 100%;
+        left: 0;
+    }
+
+    .header nav ul {
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+    }
+
+    .header nav ul li {
+        text-align: center;
+        padding: 8px 0;
+    }
+
+    .hamburguer {
+        display: block;
+        cursor: pointer;
+    }
+
+    .logo_l {
+        display: none;
+    }
+    
+    .logo_m {
+        display: none;
+    }
+
+    .logo_s {
+        display: block;
+    }
+
+    .topFooter {
+        padding: 0 16px;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .bottomFooter p {
+        font-size: 16px;
+        margin-top: 24px;
+    }
 }

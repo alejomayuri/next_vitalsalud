@@ -69,3 +69,30 @@
     margin-top: 24px;
     line-height: 32px;
 }
+
+@media screen and (max-width: 1200px) {
+    .image {
+      display: none;
+    }
+  
+    .text {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 796px) {
+    .text > h2 {
+      font-size: 60px;
+      width: 100%;
+    }
+  
+    .text p {
+      font-size: 20px;
+      margin-top: 16px;
+    }
+
+    .text ul {
+        margin-top: 16px;
+    }
+  }

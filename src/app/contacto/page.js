@@ -8,17 +8,17 @@ export default function Nosotros() {
   return (
     <div className={style.wrapper}>
         <div>
-          <Image width={500} height={360} alt="main image" src="/contacto.png" />
+          <Image className={style.image} width={500} height={360} alt="main image" src="/contacto.png" />
         </div>
         <div className={style.text}>
             <h2 className={katibeh.className}>Contáctanos</h2>
             <ul>
                 <li className={kanit.className}>
-                    <Phone width={50} height={50} />
+                    <Phone className={style.image} width={50} height={50} />
                     <p>938 571 905</p>
                 </li>
                 <li className={kanit.className}>
-                    <Mail width={50} />
+                    <Mail className={style.image} width={50} />
                     <p>vitalsalud.center24@gmail.com</p>
                 </li>
                 <li className={kanit.className}>

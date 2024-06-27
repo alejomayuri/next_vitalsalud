@@ -17,4 +17,19 @@ main {
   box-sizing: border-box;
   padding: 60px 125px;
   margin: 0 auto;
-} 
+}
+
+@media screen and (max-width: 1200px) {
+  main {
+    padding: 60px;
+    min-height: calc(100vh - 263px);
+  }
+
+}
+
+@media screen and (max-width: 796px) {
+  main {
+    padding: 16px;
+    min-height: calc(100vh - 282px);
+  }
+}
