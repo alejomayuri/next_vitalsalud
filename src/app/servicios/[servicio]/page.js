@@ -181,7 +181,45 @@ export default function Servicio() {
             src: "/content/chequeos-preventivos.jpg",
             title: "Chequeos preventivos",
             text: ["Un chequeo médico anual es una visita médica preventiva enfocada en buscar situaciones de salud y detectarlas antes de que se manifiesten. En ella puedes discutir cualquier duda o inquietud que tengas sobre tu salud, y recibir consejos de tu médico de cuidado primario."],
-        }
+        },
+        {
+            href: "/servicios/cirugia-plastica",
+            src: "/content/cirugia-plastica.jpg",
+            title: "Cirugía plástica",
+            list: [
+                "• Blefaroplastia",
+                "• Lipoescultura",
+                "• Mamoplastia",
+                "• Abdominoplastia",
+                "• Rinoplastia",
+                "• Lifting facial",
+                "• Manejo y tratamiento de pacientes quemados",
+                "• Mommy Makeover: lipoescultura, abdominoplastia, mamoplastia"
+            ]
+        },
+        {
+            href: "/servicios/ginecologia",
+            src: "/content/ginecologia.jpg",
+            title: "Ginecología",
+            text: ["Especialidad médica de Ginecología y obstetricia. Realiza evaluación pues ello nos permite detectar cualquier anomalía gineoclogica a traves de:"],
+            list: [
+                "• Consulta ginecológica",
+                "• Fertilidad",
+                "• Métodos anticonceptivos",
+                "• Ecografía transvaginal",
+                "• Papanicolaou y prueba molecular VPH",
+                "• IVAA",
+                "• Tratamiento de Enfermedad de Transmisión Sexual (ETS)",
+                "• Menopausia",
+                "• Entre otros",
+            ]
+        },
+        {
+            href: "/servicios/medicina-general",
+            src: "/content/medicina-general.jpg",
+            title: "Medicina general",
+            text: ["Las evaluaciones de chequeo médico generales están orientados a evaluar tu estado de salud y prevenir algunas patologías asociadas a tu tipo de trabajo, sexo, edad, estilo de vida e historia clínica personal y familiar"],
+        },
     ]
 
     return (

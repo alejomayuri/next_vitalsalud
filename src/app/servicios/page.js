@@ -19,15 +19,18 @@ export default function Nosotros() {
                 <li><Link href="/servicios/biopsias">BIOPSIAS</Link></li>
                 <li><Link href="/servicios/cardiologia">CARDIOLOGÍA</Link></li>
                 <li><Link href="/servicios/chequeos-preventivos">CHEQUEOS PREVENTIVOS</Link></li>
+                <li><Link href="/servicios/cirugia-plastica">CIRUGÍA PLÁSTICA</Link></li>
               </ul>
               <ul>
                 <li><Link href="/servicios/laboratorio-clinico">EXAMENES DE LAB CLÍNICO</Link></li>
                 <li><Link href="/servicios/gastroenterologia">GASTROENTEROLOGÍA</Link></li>
+                <li><Link href="/servicios/ginecologia">GINECOLOGÍA</Link></li>
                 <li><Link href="/servicios/imagenes">IMÁGENES</Link></li>
                 <li><Link href="/servicios/inmunologia-y-alergia">INMULOGÍA Y ALERGIA</Link></li>
               </ul>
               <ul>
                 <li><Link href="/servicios/laboratorio-de-patologia">LABORATORIO DE PATOLOGÍA</Link></li>
+                <li><Link href="/servicios/medicina-general">MEDICINA GENERAL</Link></li>
                 <li><Link href="/servicios/mesoterapia-y-reflexologia">MESOTERAPIA Y REFLEXOLOGÍA</Link></li>
                 <li><Link href="/servicios/oncologia">ONCOLOGÍA</Link></li>
                 <li><Link href="/servicios/para-ellos">PARA EL</Link></li>
